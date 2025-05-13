@@ -5,22 +5,16 @@ using UnityEngine.UI;
 
 public class CharacterSelection : MonoBehaviour
 {
-    public GameObject mainigaisAttels;
-    public Sprite[] atteluMasivs;
+    public Sprite[] soriteArray;
+    public GameObject imageField; //att
 
-    public void izkrit(int sk)
+    public void Dropdown(int index)
     {
-        if (sk == 0)
-        {
-            mainigaisAttels.GetComponent<Image>().sprite = atteluMasivs[0]; ;
-        }
-        if (sk == 1)
-        {
-            mainigaisAttels.GetComponent<Image>().sprite = atteluMasivs[1]; ;
-        }
-        if (sk == 2)
-        {
-            mainigaisAttels.GetComponent<Image>().sprite = atteluMasivs[2]; ;
-        }
+        if (index == 0)
+            imageField.GetComponent<Image>().sprite = soriteArray[0];
+        else if (index == 1)
+            imageField.GetComponent<Image>().sprite = soriteArray[1];
+        else if (index == 2)
+            imageField.GetComponent<Image>().sprite = soriteArray[2];
     }
 }
