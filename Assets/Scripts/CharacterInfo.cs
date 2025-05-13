@@ -14,6 +14,13 @@ public class CharacterInfo : MonoBehaviour
     {
         string charName = nameInput.text;
 
+        // Проверка: имя не должно быть числом
+        if (int.TryParse(charName, out _))
+        {
+            resultText.text = "Vārda laukā nevar ievadīt tikai ciparus!";
+            return;
+        }
+
         // Проверка: введён ли год и является ли он числом
         if (int.TryParse(yearInput.text, out int birthYear))
         {
@@ -22,7 +29,7 @@ public class CharacterInfo : MonoBehaviour
 
             if (age >= 0 && age < 150) // Простейшая проверка
             {
-                resultText.text = $"Supervaronis {charName} ir {age} gadus vecs!";
+                resultText.text = $"Personāžs {charName} ir {age} gadus vecs!";
             }
             else
             {
