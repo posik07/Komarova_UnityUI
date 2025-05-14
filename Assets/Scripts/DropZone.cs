@@ -1,21 +1,26 @@
-using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine;
 
 public class DropZone : MonoBehaviour, IDropHandler
 {
-    public Transform equippedHolder;
+    public Transform characterLayer;
 
     public void OnDrop(PointerEventData eventData)
     {
-        GameObject draggedObj = DraggableItem.selectedItem;
-
-        if (draggedObj != null)
+        var dragged = eventData.pointerDrag;
+        if (dragged != null)
         {
-            // Перемещаем объект внутрь equippedHolder
-            draggedObj.transform.SetParent(equippedHolder);
+            var original = dragged.GetComponent<DragItem>();
+            if (original != null && original.isOriginal)
+            {
+                // Создать одежду на персонаже
+                GameObject clothing = Instantiate(dragged, characterLayer);
+                clothing.transform.position = Input.mousePosition;
 
-            // Обнуляем локальную позицию (если надо)
-            draggedObj.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                var dragItem = clothing.GetComponent<DragItem>();
+                dragItem.isOriginal = false; // Это теперь элемент на персонаже
+                dragItem.dragCanvas = original.dragCanvas;
+            }
         }
     }
 }
