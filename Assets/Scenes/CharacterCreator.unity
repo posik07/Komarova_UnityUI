@@ -241,6 +241,7 @@ GameObject:
   - component: {fileID: 45238725}
   - component: {fileID: 45238726}
   - component: {fileID: 45238727}
+  - component: {fileID: 45238728}
   m_Layer: 0
   m_Name: criptHolderr
   m_TagString: Untagged
@@ -387,6 +388,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   widthSlider: {fileID: 1001866708}
   heightSlider: {fileID: 846107661}
+--- !u!114 &45238728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45238720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb75bdf1eee4a0e4f98a067a8e95aaf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterDropdown: {fileID: 1063791074}
+  infoText: {fileID: 946875917}
 --- !u!1 &48280217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,7 +1732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -746, y: 462}
+  m_AnchoredPosition: {x: -768, y: 462}
   m_SizeDelta: {x: 328.1797, y: 60.9082}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &402024540
@@ -2144,8 +2159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -386.4127, y: 462}
-  m_SizeDelta: {x: 276.9297, y: 60.906}
+  m_AnchoredPosition: {x: -413.12, y: 462}
+  m_SizeDelta: {x: 330.34, y: 60.906}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &485919727
 GameObject:
@@ -4406,8 +4421,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -87, y: 127}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 4.4898987, y: 32.900085}
+  m_SizeDelta: {x: 342.98, y: 218.1998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &946875917
 MonoBehaviour:
@@ -4431,10 +4446,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_FontSize: 25
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -5377,11 +5392,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Girl
+    - m_Text: Meitene
       m_Image: {fileID: 0}
-    - m_Text: Boy
+    - m_Text: Puika
       m_Image: {fileID: 0}
-    - m_Text: Boy2
+    - m_Text: Puika2
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5840,7 +5855,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Girl
+  m_Text: Meitene
 --- !u!222 &1132610324
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6442,7 +6457,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Write name...
+  m_Text: "Ievadiet v\u0101rdu..."
 --- !u!222 &1243082521
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7759,7 +7774,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Write year...
+  m_Text: Ievadiet gadu...
 --- !u!222 &1509364670
 CanvasRenderer:
   m_ObjectHideFlags: 0
