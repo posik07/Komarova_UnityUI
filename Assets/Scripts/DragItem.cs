@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
     public Canvas dragCanvas;
     public bool isOriginal = true; // ≈сли true Ч создаЄм клон, если false Ч двигаем сам объект
@@ -64,4 +64,13 @@ public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
             canvasGroup.blocksRaycasts = true;
         }
     }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (!isOriginal)
+        {
+            FindObjectOfType<ClothingResizer>()?.SetSelectedClothing(GetComponent<RectTransform>());
+        }
+    }
+
 }
