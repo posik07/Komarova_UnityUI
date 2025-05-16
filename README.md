@@ -16,7 +16,7 @@
 - [x]  Izmantojot toggler, izvēlamies konkrētu apģērbu kategoriju, kas uzrāda piemērotu apģērbu kategorijai. Apģērbu var pārvietot ar peli.
 - [x]  Izmantojot Dropdown, mēs modemējam izvēlēties sev jebkuru lelli. Blakus tam ir Scroll View, kas mainīsies atkarībā no tā, kādu personāžu izvēlēsimies.
       ![Снимок экрана 2025-05-16 110417](https://github.com/user-attachments/assets/babefe10-ca08-4f9e-ae29-0ce87c75b1ca)
-![Uploadi![Снимок экрана 2025-05-16 110437](https://github.com/user-attachments/assets/0ffd057b-df5d-4cfc-8298-4525baf7a318)
+![Снимок экрана 2025-05-16 110426](https://github.com/user-attachments/assets/d9f3fa58-07d4-4691-ab36-b32746ccf55f)
 ![Снимок экрана 2025-05-16 110437](https://github.com/user-attachments/assets/30a4513d-3d65-4c48-8183-43b2e45d5d06)
 
 - [x]  Kad apģērbu pārvelkam uz personāžu, nospiežot uz konkrētā apģērba, izmantojot sarkano un zilo Slaideru, varam mainīt apģērbu garumu un platumu.
